@@ -1,0 +1,147 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Assigned Tasks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content >
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add" (click)="peoplepage()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>  
+  <ion-list >
+    <ion-item color="medium" *ngFor="let item of items;index as i;let c of condition;" button (click)="info(item)" >
+      
+      <ion-avatar slot="start" >
+        <img src= {{item[1]}} >
+      </ion-avatar>
+      <ion-label>
+        <font color="black">
+        <h2><b>{{item[2]}}</b></h2>
+        <p>{{item[3]}}</p>
+        </font>
+      </ion-label>
+      <ion-badge color="medium"><font color="black">23/04/2020</font></ion-badge>
+      
+         
+
+    </ion-item>
+    
+    
+
+    <!--<ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="assets/female.png">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>Hauva</b></h2>
+        <p>check papers</p>
+      </ion-label>
+      <ion-badge color="success">23/02/2020</ion-badge>
+      <ion-select  interface="action-sheet">
+        <ion-select-option value="approve" color="success">Approved</ion-select-option>
+        <ion-select-option value="refuse" color="primary">Refuse</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item color="danger" >
+      <ion-avatar slot="start">
+        <img src="assets/female.png">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>Saundarya</b></h2>
+        <p>Create ppt for class</p>
+      </ion-label>
+      <ion-badge color="danger">03/04/2020</ion-badge>
+      <ion-button  (click)="presentToast()">Send Reminder</ion-button>
+
+    </ion-item>
+
+    <ion-item color="danger" >
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>Ram</b></h2>
+        <p>Bring bookay</p>
+      </ion-label>
+      <ion-badge color="danger">02/03/2020</ion-badge>
+      <ion-button  (click)="presentToast()">Send Reminder</ion-button>
+
+    </ion-item>
+
+
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>Parth</b></h2>
+        <p>sign certificates</p>
+      </ion-label>
+      <ion-badge color="success">13/02/2020</ion-badge>
+      <ion-select  interface="action-sheet">
+        <ion-select-option value="approve" color="success">Approved</ion-select-option>
+        <ion-select-option value="refuse" color="primary">Refuse</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="assets/female.png">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>vaishnavi</b></h2>
+        <p>Bring Notes for class</p>
+      </ion-label>
+      <ion-badge color="success">25/04/2020</ion-badge>
+      <ion-select  interface="action-sheet">
+        <ion-select-option value="approve" color="success">Approved</ion-select-option>
+        <ion-select-option value="refuse" color="primary">Refuse</ion-select-option>
+      </ion-select>
+
+    </ion-item>
+
+    <ion-item color="danger" >
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>nihar</b></h2>
+        <p>clean the classroom</p>
+      </ion-label>
+      <ion-badge color="danger">12/03/2020</ion-badge>
+      <ion-button  (click)="presentToast()">Send Reminder</ion-button>
+
+    </ion-item>
+
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <h2><b>Onkar</b></h2>
+        <p>Create question paper for exam</p>
+      </ion-label>
+    
+    <ion-badge color="success">07/04/2020</ion-badge>
+    <ion-select  interface="action-sheet">
+      <ion-select-option value="approve" color="success">Approved</ion-select-option>
+      <ion-select-option value="refuse" color="primary">Refuse</ion-select-option>
+    </ion-select>
+  </ion-item>-->
+  </ion-list>
+</ion-content>

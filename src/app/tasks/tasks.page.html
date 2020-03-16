@@ -1,0 +1,166 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="dash()">
+        <ion-icon slot="icon-only" name="share-social-outline" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>My Tasks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item  color="danger" *ngFor="let item of items;index as i;let c of condition;" button (click)="info(item)">
+      <ion-avatar slot="start">
+        <img src={{item[1]}}>
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <font color="black">
+          <h2><b>{{item[2]}}</b> </h2>
+        <p> {{item[3]}}</p>
+        </font>
+        </ion-text>
+        
+      </ion-label>
+      <ion-badge color="danger"><font color="black">{{item[4]}}</font></ion-badge>
+    </ion-item>
+
+
+
+    <!--<ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">2 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>Rahul</b> </h2>
+        <p> complete assignemnet</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >Completed </ion-select-option>  
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/female.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">0 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>Hauva</b> </h2>
+        <p> Check Papers</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >Completed </ion-select-option>  
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">6 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>Ram</b> </h2>
+        <p> Create ppt for class</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >Completed</ion-select-option>  
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/female.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">2 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>Saundarya</b> </h2>
+        <p> bring bookay</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >Completed </ion-select-option>  
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">9 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>Parth</b> </h2>
+        <p> sign certificate</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >completed</ion-select-option>  
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/female.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">4 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>vaishnavi</b> </h2>
+        <p> Bring notes for class</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >completed</ion-select-option>  
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">0 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>Onkar</b> </h2>
+        <p> clean the classroom</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >completed</ion-select-option>  
+      </ion-select>
+    </ion-item>
+
+    <ion-item color="danger">
+      <ion-avatar slot="start">
+        <img src="assets/male.png">
+      </ion-avatar>
+      <ion-label>
+        <ion-text>
+          <h2><b><ion-badge color="danger">0 <ion-icon name="notifications-circle-outline"></ion-icon></ion-badge>Parth</b> </h2>
+        <p> Create Question paper</p>
+        </ion-text>
+        
+      </ion-label>
+      <ion-select>
+        <ion-select-option >Completed </ion-select-option>  
+      </ion-select>
+    </ion-item>-->
+
+
+  </ion-list>
+</ion-content>

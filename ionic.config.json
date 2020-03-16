@@ -1,0 +1,8 @@
+{
+  "name": "E-office",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>logout</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="afAuth.auth.currentUser">
+    {{signOut()}}
+    {{nextpage()}}
+</div>
+</ion-content>
